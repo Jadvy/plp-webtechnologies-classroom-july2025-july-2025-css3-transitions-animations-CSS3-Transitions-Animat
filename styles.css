@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Part 1: Button hover animation */
+.animated-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.animated-btn:hover {
+    transform: scale(1.2);
+    background: #0056b3;
+}
+
+/* Part 1: Continuous animation with keyframes */
+.box {
+    width: 50px;
+    height: 50px;
+    background: crimson;
+    margin: 20px auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+/* Part 3: JS-triggered animation */
+.js-box {
+    width: 100px;
+    height: 100px;
+    background: teal;
+    margin: 20px auto;
+    transition: transform 0.5s ease, background 0.5s ease;
+}
+
+.js-box.animate {
+    transform: rotate(180deg) scale(1.5);
+    background: orange;
+}
